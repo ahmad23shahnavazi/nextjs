@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.button {
+  display: flex;
+  align-items: center;
+}
+.h1 {
+  font-weight: 100;
+  margin: auto 20px;
+}
