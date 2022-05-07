@@ -5,12 +5,13 @@ import Link from "next/Link";
 
 const CartItem = (props) => {
   const clickHandler = () => {
-    localStorage.setItem("id", props.image);
+    localStorage.setItem("id", props.id);
     localStorage.setItem("existance", props.existance);
     localStorage.setItem("title", props.title);
+    localStorage.setItem("image", props.image);
   };
   return (
-    <Link href="/products/ProductItem">
+    <Link href={`/products/${props.id}`}>
       <Box
         sx={{
           width: 260,

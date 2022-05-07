@@ -10,8 +10,8 @@ const CartClick = () => {
   const [isId, setId] = useState("");
 
   useEffect(() => {
-    const id = localStorage.getItem("id");
-    setId(id);
+    const image = localStorage.getItem("image");
+    setId(image);
   });
 
   return (

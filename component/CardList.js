@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "./Button/Button";
-
+import CardItem from "./CardItem";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -61,19 +61,24 @@ const CardList = (props) => {
           className="mySwiper"
           autoplay={{ delay: 3000 }}
         >
-          {props.card.map((cart) => (
-            <SwiperSlide>
-              <CardItem
-                key={cart.id}
-                image={cart.image}
-                star={cart.star}
-                title={cart.title}
-                price={cart.price}
-                job={cart.job}
-                existance={cart.existance}
-              />
-            </SwiperSlide>
-          ))}
+          {props.card
+            .filter((item) => {
+              return item.flag === true;
+            })
+            .map((cart) => (
+              <SwiperSlide>
+                <CardItem
+                  key={cart.id}
+                  id={cart.id}
+                  image={cart.image}
+                  star={cart.star}
+                  title={cart.title}
+                  price={cart.price}
+                  job={cart.job}
+                  existance={cart.existance}
+                />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </Fragment>
