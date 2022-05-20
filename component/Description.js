@@ -21,6 +21,7 @@ const Description = () => {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "center",
+              textAlign: "center",
             }}
           >
             <Box>
@@ -46,6 +47,7 @@ const Description = () => {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "center",
+              textAlign: "center",
             }}
           >
             <Box>
@@ -71,6 +73,7 @@ const Description = () => {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "center",
+              textAlign: "center",
             }}
           >
             <Box>
@@ -96,6 +99,7 @@ const Description = () => {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "center",
+              textAlign: "center",
             }}
           >
             <Box>

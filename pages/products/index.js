@@ -4,12 +4,12 @@ import { Fragment } from "react";
 import ProductList from "component/product/ProductList";
 import Email from "component/Email";
 import Footer from "component/Footer";
-import json from "public/store.json";
+import json from "../../public/store.json";
 
 const Products = (props) => {
   return (
     <Fragment>
-      <Navbar />
+      <Navbar card={props.carts} />
       <NavLink />
       <ProductList card={props.carts} />
       <Email />

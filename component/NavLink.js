@@ -31,7 +31,7 @@ const NavLink = () => {
           component="li"
           sx={{
             mr: 5,
-            p: 1,
+            p: 1.2,
             bgcolor: "#4B4A49",
             "&:hover": {
               bgcolor: "#F2C409",
@@ -45,7 +45,7 @@ const NavLink = () => {
           component="li"
           sx={{
             mr: 2,
-            p: 1,
+            p: 1.2,
             cursor: "pointer",
             bgcolor: "#4B4A49",
             "&:hover": {
@@ -59,7 +59,7 @@ const NavLink = () => {
           component="li"
           sx={{
             mr: 2,
-            p: 1,
+            p: 1.2,
             cursor: "pointer",
             bgcolor: "#4B4A49",
             "&:hover": {

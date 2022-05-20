@@ -22,7 +22,7 @@ const Navbar = (props) => {
 
     props.card
       .filter((item) => {
-        return item.id === enteredId;
+        return item.title === enteredId;
       })
       .map((item) => {
         localStorage.setItem("id", item.id);

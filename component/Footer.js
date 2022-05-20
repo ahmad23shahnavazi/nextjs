@@ -1,6 +1,7 @@
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import Link from "next/Link";
 const Footer = () => {
   return (
     <Box>
@@ -29,15 +30,21 @@ const Footer = () => {
         <Grid
           container
           direction="row-reverse"
-          justifyContent="flex-end"
+          justifyContent="flex-start"
           alignItems="center"
         >
           <Grid item lg={4} xl={4} md={4} sm={4} xs={6}>
             <Box sx={{ textAlign: "right", mr: 3 }}>
               <Box component="h3">دسته بندی محصولات</Box>
-              <Box component="p">محصولات دیجیتال</Box>
-              <Box component="p">لوازم منزل</Box>
-              <Box component="p">آرایشی و بهداشتی</Box>
+              <Box component="p">
+                <Link href="/products"> محصولات دیجیتال </Link>
+              </Box>
+              <Box component="p">
+                <Link href="/products">لوازم منزل</Link>
+              </Box>
+              <Box component="p">
+                <Link href="/products">آرایشی و بهداشتی</Link>
+              </Box>
             </Box>
           </Grid>
           <Grid
@@ -50,7 +57,9 @@ const Footer = () => {
             sx={{ textAlign: "right" }}
           >
             <Box component="h3">لینک‌های مفید</Box>
-            <Box component="p">ورود به حساب کاربری</Box>
+            <Box component="p">
+              <Link href="/login">ورود به حساب کاربری</Link>
+            </Box>
             <Box component="p">تماس با ما</Box>
             <Box component="p">پرسش‌های متداول</Box>
           </Grid>
@@ -61,7 +70,7 @@ const Footer = () => {
             md={4}
             sm={4}
             xs={6}
-            sx={{ textAlign: "right" }}
+            sx={{ textAlign: "right", pr: 1 }}
           >
             <Box component="h3">راههای ارتباطی با ما</Box>
             <Box>

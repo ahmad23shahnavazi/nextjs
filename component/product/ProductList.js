@@ -159,7 +159,7 @@ const ProductList = (props) => {
         <Grid container justifyContent="flex-end">
           {props.card.map((cart) => (
             <Grid item xl={2.4} lg={3} md={3} sm={4} xs={12}>
-              <Link href="/products/ProductItem">
+              <Link href={`/products/${cart.id}`}>
                 <div
                   onClick={() =>
                     clickHandler({
